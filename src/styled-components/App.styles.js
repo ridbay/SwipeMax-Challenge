@@ -10,7 +10,7 @@ export const AppStyle= styled.section`
 `
 
 export const AppTitle = styled.h1`
-font-size : 1.5em;
-text-align: center;
-color: blue;
+    font-size : 1.5em;
+    text-align: center;
+    color: blue;
 `;
