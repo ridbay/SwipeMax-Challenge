@@ -4,7 +4,8 @@ import './App.css';
 import axios from 'axios';
 
 import CaptionContainer from './Components/Containers/CaptionContainer'
-import TagContainer from './Components/Containers/TagContainer'
+import TagContainer from './Components/Containers/TagContainer';
+import SearchBoxContainer from './Components/Containers/SearchBoxContainer'
 
 class App extends Component {
   state={
@@ -39,6 +40,7 @@ class App extends Component {
       <div className="App">
         <AppStyle>
           <div>
+            <SearchBoxContainer placeholder='Search' handleChange={this.handleChange}/>
             <AppTitle>Tags</AppTitle>
             {tags.length > 1 ? <TagContainer tags={tags}/> : <div>Loading tags...</div>}
           </div>
