@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { AppStyle, AppTitle } from './styled-components/App.styles';
+import './App.css';
 import axios from 'axios';
 
 import CaptionContainer from './Components/Containers/CaptionContainer'
+import TagContainer from './Components/Containers/TagContainer'
 
 class App extends Component {
   state={
@@ -19,7 +21,6 @@ class App extends Component {
     ])
       .then(axios.spread((tag, caption) => {
         this.setState({ tags: tag.data.data.tags });
-        console.log(caption)
         this.setState({ captions: caption.data.data.captions });
       })).catch(error => {
         console.log(error)
@@ -39,13 +40,11 @@ class App extends Component {
         <AppStyle>
           <div>
             <AppTitle>Tags</AppTitle>
-            {tags.length > 1 ? <div>{tags.map((tag, i) => <li key={i}>{tag}</li>)}</div> : <div>Loading tags...</div>}
+            {tags.length > 1 ? <TagContainer tags={tags}/> : <div>Loading tags...</div>}
           </div>
           <div>
             <AppTitle>Captions</AppTitle>
-            {/* {tags.length > 1 ? <CaptionContainer captions={captions}/>: <div>Loading categories...</div>} */}
-            <CaptionContainer captions={captions}/>
-
+            {tags.length > 1 ? <CaptionContainer captions={captions}/>: <div>Loading categories...</div>}
           </div>
           {/* <SearchBox placeholder='Search Monsters' handleChange={this.handleChange}/>
           <CapList monsters={filteredMonsters}/> */}
