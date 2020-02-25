@@ -15,7 +15,7 @@ class App extends Component {
     }
   }
 
-  
+
   componentDidMount() {
     axios.get('https://capcards-api.herokuapp.com/v1.0/api/tag/').then(response => {
       console.log(response.data.data.tags)
@@ -26,7 +26,7 @@ class App extends Component {
 
     axios.get('https://capcards-api.herokuapp.com/v1.0/api/caption/').then(response => {
       console.log(response.data.data.captions)
-      this.setState({ categories: response.data.data.captions});
+      this.setState({ categories: response.data.data.captions });
     }).catch(error => {
       console.log(error)
     })
@@ -35,10 +35,16 @@ class App extends Component {
     return (
       <div className="App">
         <AppStyle>
-          
-          <div><AppTitle>Tags</AppTitle><div>{this.state.tags.map((tag, i) => <li key={i}>{tag}</li>)}</div></div>
-          <div><AppTitle>Categories</AppTitle><div>{this.state.categories.map((category, i) => <li key={i}>{category.caption}</li>)}</div></div>
-          
+
+          <div>
+            <AppTitle>Tags</AppTitle>
+            <div>{this.state.tags.map((tag, i) => <li key={i}>{tag}</li>)}</div>
+          </div>
+          <div>
+            <AppTitle>Categories</AppTitle>
+            <div>{this.state.categories.map((category, i) => <li key={i}>{category.caption}</li>)}</div>
+          </div>
+
         </AppStyle>
       </div>
     )
