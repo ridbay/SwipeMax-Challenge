@@ -53,10 +53,8 @@ class App extends Component {
           <div>
           <SearchBoxContainer placeholder='Filter Captions' handleChange={this.handleCaptionChange}/>
             <AppTitle>Captions</AppTitle>
-            {tags.length > 1 ? <CaptionContainer captions={filteredCaptions}/>: <div>Loading categories...</div>}
+            {tags.length > 1 ? <CaptionContainer captions={filteredCaptions}/>: <div>Loading Captions...</div>}
           </div>
-          {/* <SearchBox placeholder='Search Monsters' handleChange={this.handleChange}/>
-          <CapList monsters={filteredMonsters}/> */}
         </AppStyle>
       </div>
     )
