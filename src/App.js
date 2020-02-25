@@ -38,11 +38,12 @@ class App extends Component {
 
           <div>
             <AppTitle>Tags</AppTitle>
-            <div>{this.state.tags.map((tag, i) => <li key={i}>{tag}</li>)}</div>
+            {this.state.tags.length > 1 ? <div>{this.state.tags.map((tag, i) => <li key={i}>{tag}</li>)}</div>: <div>Loading tags...</div>}
           </div>
           <div>
             <AppTitle>Categories</AppTitle>
-            <div>{this.state.categories.map((category, i) => <li key={i}>{category.caption}</li>)}</div>
+            {this.state.tags.length > 1 ? <div>{this.state.categories.map((category, i) => <li key={i}>{category.caption}</li>)}</div> : <div>Loading categories...</div>}
+            
           </div>
 
         </AppStyle>
