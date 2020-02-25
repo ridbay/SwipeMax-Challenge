@@ -8,11 +8,12 @@ import TagContainer from './Components/Containers/TagContainer';
 import SearchBoxContainer from './Components/Containers/SearchBoxContainer'
 
 class App extends Component {
-  state={
+  state = {
     tags: [],
     captions: [],
     searchTagField: '',
-    searchCaptionField: '' 
+    searchCaptionField: '',
+    isPending: true
   }
 
 
@@ -24,37 +25,42 @@ class App extends Component {
       .then(axios.spread((tag, caption) => {
         this.setState({ tags: tag.data.data.tags });
         this.setState({ captions: caption.data.data.captions });
+        this.setState({ isPending: false });
       })).catch(error => {
         console.log(error)
       });
   }
-  handleTagChange =(e)=>{
+  handleTagChange = (e) => {
     this.setState({
       searchTagField: e.target.value
     })
   }
-  handleCaptionChange =(e)=>{
+  handleCaptionChange = (e) => {
     this.setState({
       searchCaptionField: e.target.value
     })
   }
   render() {
-    const {tags, captions, searchTagField, searchCaptionField} = this.state;
-    const filteredTags = tags.filter(tag=> tag.toLowerCase().includes(searchTagField.toLowerCase()))
-    const filteredCaptions = captions.filter(caption=> caption.caption.toLowerCase().includes(searchCaptionField.toLowerCase()))
+    const { tags, captions, searchTagField, searchCaptionField, isPending } = this.state;
+    const filteredTags = tags.filter(tag => tag.toLowerCase().includes(searchTagField.toLowerCase()))
+    const filteredCaptions = captions.filter(caption => caption.caption.toLowerCase().includes(searchCaptionField.toLowerCase()))
     return (
       <div className="App">
         <AppStyle>
-          <div>
-            <SearchBoxContainer placeholder='Filter Tags' handleChange={this.handleTagChange}/>
+          {isPending ? <h1>Loading Tags And Captions...</h1> : <div><div>
+            <SearchBoxContainer placeholder='Filter Tags' handleChange={this.handleTagChange} />
+
             <AppTitle>Tags</AppTitle>
-            {tags.length > 1 ? <TagContainer tags={filteredTags}/> : <div>Loading tags...</div>}
+            <TagContainer tags={filteredTags} />
           </div>
-          <div>
-          <SearchBoxContainer placeholder='Filter Captions' handleChange={this.handleCaptionChange}/>
-            <AppTitle>Captions</AppTitle>
-            {tags.length > 1 ? <CaptionContainer captions={filteredCaptions}/>: <div>Loading Captions...</div>}
-          </div>
+            <div>
+              <SearchBoxContainer placeholder='Filter Captions' handleChange={this.handleCaptionChange} />
+              <AppTitle>Captions</AppTitle>
+              <CaptionContainer captions={filteredCaptions} />
+            </div>
+
+          </div>}
+
         </AppStyle>
       </div>
     )
