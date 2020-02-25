@@ -1,9 +1,9 @@
 import React from 'react';
 import {CaptionView} from '../Views/CaptionView';
 
-const CaptionContainer = props => (
+const CaptionContainer = ({captions}) => (
     <div>
-        {props.captions.map((caption, i) => <CaptionView key={i}>{caption}</CaptionView>)}
+        {captions.map((caption, i) => <CaptionView key={i}>{caption}</CaptionView>)}
     </div>
 )
 
