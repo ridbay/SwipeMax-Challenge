@@ -1,7 +1,7 @@
 import React from 'react';
-
+import CaptionViewStyle from '../../styled-components/CaptionView.styles'
 export const CaptionView = props => (
-    <div>
+    <CaptionViewStyle>
         {props.children.caption}
-    </div>
+    </CaptionViewStyle>
 )

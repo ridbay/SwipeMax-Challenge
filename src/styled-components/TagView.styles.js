@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
-export const TagViewStyle= styled.section`
-display: flex;
+const TagViewStyle= styled.section`
+    display: flex;
     flex-direction: column;
-    background-color: #95dada;
-    border-radius: 5px;
-    border: 1px solid grey;
-    padding: 25px;
+    background-color: blue;
+    color: white;
+    text-transform:capitalize;
+    border-radius: 20px;
+    border: 1px solid blue;
+    padding: 5px;
     cursor: pointer;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: transform 0.25s ease-out;
-`
+    // backface-visibility: hidden;
+    // transform: translateZ(0);
 
-// .card-container:hover {
-//     transform: scale(1.05)
-// }
+`
+export default TagViewStyle;

@@ -1,10 +1,11 @@
 import React from 'react';
 import {TagView} from '../Views/TagView';
+import TagContainerStyle from '../../styled-components/TagContainer.styles'
 
 const TagContainer = ({tags}) => (
-    <div>
+    <TagContainerStyle>
         {tags.map((tag, i) => <TagView key={i}>{tag}</TagView>)}
-    </div>
+    </TagContainerStyle>
 )
 
 export default TagContainer;
