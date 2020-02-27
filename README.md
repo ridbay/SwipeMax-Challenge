@@ -1,68 +1,82 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Caption-Cards-Challenge
 
-In the project directory, you can run:
+## What are the features of this App?
 
-### `npm start`
+This project contains basic feature of:
+1. List of Tags and Captions  
+2. Filtering by Tags 
+3. Adding Tags & Captions 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Live Application URL
 
-### `npm test`
+### [(Live Demo)](https://sleepy-booth-9e836c.netlify.com/)
+This URL has the application deployed in.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Installation and Setup Instructions
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisites
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Clone this Repo
+https://github.com/ridbay/Caption-Cards-Challenge.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone down this repository. You will need `react`, `node` and `npm` installed globally on your machine.  
+```bash
+git clone https://github.com/ridbay/Caption-Cards-Challenge.git
+```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Installation:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Go into the project folder 
+```bash
+cd Caption-Cards-Challenge
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+and type the following command to install all npm packages
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+To Start Server,  Type the following command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To Run Build,  Type the following command:
 
-### Code Splitting
+```bash
+npm build
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+ 
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+**Explanations on the commands**
 
-### Making a Progressive Web App
+The scripts;
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- `npm start`: This runs the server.js 
 
-### Advanced Configuration
+- `npm server`: This  give us live reloading (hot reloading) (developement)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- `npm build`: Changes the directory into client folder  runs build script
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The Application Runs on **localhost:3000**
+
+## Live Application URL
+
+[(Live Demo)](https://sleepy-booth-9e836c.netlify.com/)
+
+Click on the link to see the application
+
+## Contributing
+
+Feel free to open issues and pull requests.!
