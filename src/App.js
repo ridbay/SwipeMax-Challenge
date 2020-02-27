@@ -23,7 +23,7 @@ class App extends Component {
     searchTagField: '',
     searchCaptionField: '',
     caption: '',
-    isPending: false
+    isPending: true
   }
 
 
