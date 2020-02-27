@@ -6,7 +6,7 @@ const Form = ({handleSubmit, handleChange}) => {
             <form onSubmit={handleSubmit}>
                 <label>
                 Add:
-                    <input type="text" name="newCaption" onChange={handleChange}/>
+                    <input type="text" name="caption" onChange={handleChange}/>
                 </label>
                 <button type="submit">Add Caption</button>
             </form>

@@ -20,7 +20,7 @@ class App extends Component {
     search: '',
     searchTagField: '',
     searchCaptionField: '',
-    newCaption: '',
+    caption: '',
     isPending: false
   }
 
@@ -61,12 +61,11 @@ class App extends Component {
 
 handleSubmit = (e) => {
   e.preventDefault();
-
-  const NewCaption = {
-    newCaption: this.state.newCaption
+  const caption = {
+    caption: this.state.caption
   };
-console.log(NewCaption)
-  axios.post('https://capcards-api.herokuapp.com/v1.0/api/caption/',{NewCaption})
+console.log(JSON.stringify(caption))
+  axios.post('https://capcards-api.herokuapp.com/v1.0/api/caption/',{caption})
   .then(response => {
     console.log(response);
     console.log(response.data)
