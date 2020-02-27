@@ -1,7 +1,8 @@
 import React from 'react';
+import SearchBoxStyle from '../../styled-components/SearchBox.styles'
 
 const SearchBoxContainer = ({ placeholder, handleChange }) => (
-    <input
+    <SearchBoxStyle
 
         type='search'
         placeholder={placeholder}

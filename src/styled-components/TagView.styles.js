@@ -15,6 +15,3 @@ display: flex;
     transition: transform 0.25s ease-out;
 `
 export default TagViewStyle;
-// .card-container:hover {
-//     transform: scale(1.05)
-// }

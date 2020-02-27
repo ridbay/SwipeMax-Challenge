@@ -16,6 +16,3 @@ display: flex;
     transition: transform 0.25s ease-out;
 `
 export default CaptionViewStyle;
-// .card-container:hover {
-//     transform: scale(1.05)
-// }
