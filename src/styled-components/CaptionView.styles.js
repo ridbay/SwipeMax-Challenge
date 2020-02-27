@@ -11,6 +11,7 @@ display: flex;
     border: 1px solid grey;
     padding: 25px;
     cursor: pointer;
+    box-shadow: 5px 3px #888888;
     backface-visibility: hidden;
     transform: translateZ(0);
     transition: transform 0.25s ease-out;

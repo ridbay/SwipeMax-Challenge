@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const AppStyle= styled.section`
-  background: white;
+  background: #f5f5f5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const TagContainerStyle= styled.section`
 width: 10vw;
-height: 5vh;
 // margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 grid-gap: 10px;
+margin-bottom: 60px;
 `
 
 export default TagContainerStyle;

@@ -55,13 +55,13 @@ class App extends Component {
       <div className="App">
         <AppStyle>
           {isPending ? <h1>Loading Tags And Captions...</h1> : <div><div>
-            <SearchBoxContainer placeholder='Filter Tags' handleChange={this.handleTagChange} />
+            <SearchBoxContainer placeholder='Search Tags' handleChange={this.handleTagChange} />
 
             <AppTitle>Tags</AppTitle>
             <TagContainer tags={filteredTags} />
           </div>
             <div>
-              <SearchBoxContainer placeholder='Filter Captions' handleChange={this.handleCaptionChange} />
+              {/* <SearchBoxContainer placeholder='Filter Captions' handleChange={this.handleCaptionChange} /> */}
               <AppTitle>Captions</AppTitle>
               <CaptionContainer captions={filteredCaptions} />
             </div>
