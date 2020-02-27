@@ -22,21 +22,21 @@ class App extends Component {
   }
 
 
-  componentDidMount() {
-    axios.all([
-      axios.get('https://capcards-api.herokuapp.com/v1.0/api/tag/'),
-      axios.get('https://capcards-api.herokuapp.com/v1.0/api/caption/')
-    ])
-      .then(axios.spread((tag, caption) => {
-        this.setState({ tags: tag.data.data.tags });
-        console.log(tag.data.data.tags)
-        this.setState({ captions: caption.data.data.captions });
-        console.log(caption.data.data.captions)
-        this.setState({ isPending: false });
-      })).catch(error => {
-        console.log(error)
-      });
-  }
+  // componentDidMount() {
+  //   axios.all([
+  //     axios.get('https://capcards-api.herokuapp.com/v1.0/api/tag/'),
+  //     axios.get('https://capcards-api.herokuapp.com/v1.0/api/caption/')
+  //   ])
+  //     .then(axios.spread((tag, caption) => {
+  //       this.setState({ tags: tag.data.data.tags });
+  //       console.log(tag.data.data.tags)
+  //       this.setState({ captions: caption.data.data.captions });
+  //       console.log(caption.data.data.captions)
+  //       this.setState({ isPending: false });
+  //     })).catch(error => {
+  //       console.log(error)
+  //     });
+  // }
   handleTagChange = (e) => {
     this.setState({
       searchTagField: e.target.value
