@@ -6,7 +6,7 @@ import axios from 'axios';
 import CaptionContainer from './Components/Containers/CaptionContainer'
 import TagContainer from './Components/Containers/TagContainer';
 import SearchBoxContainer from './Components/Containers/SearchBoxContainer';
-import Form from './Components/Form'
+import AddCaption from './Components/AddCaption'
 
 class App extends Component {
   state = {
@@ -80,9 +80,10 @@ console.log(JSON.stringify(caption))
             <div>
               {/* <SearchBoxContainer placeholder='Filter Captions' handleChange={this.handleCaptionChange} /> */}
               <AppTitle>Captions</AppTitle>
+              <AddCaption handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>
               <CaptionContainer captions={filteredCaptions} />
             </div>
-            <Form handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>
+            
           </div>}
 
         </AppStyle>
