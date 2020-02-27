@@ -64,7 +64,10 @@ console.log(JSON.stringify(caption))
 
   render() {
     const { tags, captions, search, searchCaptionField, isPending } = this.state;
-    const filteredTags = tags.filter(tag => tag.toLowerCase().includes(search.toLowerCase()))
+    
+    const filteredTags = tags.filter((tag, index) => tags.indexOf(tag)=== index)
+    const allFilteredTags = filteredTags.filter(tag => tag.toLowerCase().includes(search.toLowerCase()))
+    console.log("All filtered tags", allFilteredTags)
     const filteredCaptions = captions.filter(caption => caption.caption.toLowerCase().includes(searchCaptionField.toLowerCase()))
     return (
       <div className="App">

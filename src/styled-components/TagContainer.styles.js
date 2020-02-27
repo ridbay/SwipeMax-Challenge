@@ -7,6 +7,7 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 grid-gap: 10px;
 margin-bottom: 60px;
+text-align: center;
 `
 
 export default TagContainerStyle;

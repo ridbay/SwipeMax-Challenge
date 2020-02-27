@@ -12,11 +12,10 @@ export const SearchBoxStyleInput = styled.input`
 `
 export const AddCaptionStyleInput = styled.input`
 
-    border: 5px solid white; 
-    
+    border: 1px solid blue; 
     padding: 15px;
     background: rgba(255,255,255,0.5);
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
 `
 
 

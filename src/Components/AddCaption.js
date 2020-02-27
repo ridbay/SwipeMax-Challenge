@@ -7,8 +7,6 @@ const AddCaption = ({ handleSubmit, handleChange }) => {
         <div>
             <form onSubmit={handleSubmit}>
             <AddCaptionStyleInput type="text" name="caption" onChange={handleChange} placeholder='Add a new caption' />
-                {/* <input /> */}
-
             <ButtonStyle type="submit">Add Caption</ButtonStyle>
             </form>
         </div>
