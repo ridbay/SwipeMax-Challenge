@@ -1,15 +1,15 @@
 import React from 'react';
 import ButtonStyle from '../styled-components/Button.style'
+import {AddCaptionStyleInput} from '../styled-components/Inputs.styles'
 
 const AddCaption = ({ handleSubmit, handleChange }) => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-
-                <input type="text" name="caption" onChange={handleChange} placeholder='Add a new caption' />
+            <AddCaptionStyleInput type="text" name="caption" onChange={handleChange} placeholder='Add a new caption' />
+                {/* <input /> */}
 
             <ButtonStyle type="submit">Add Caption</ButtonStyle>
-                {/* <button type="submit">Add Caption</button> */}
             </form>
         </div>
     )
