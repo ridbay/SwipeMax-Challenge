@@ -3,9 +3,9 @@ import SearchBoxStyle from '../../styled-components/SearchBox.styles'
 
 const SearchBoxContainer = ({ placeholder, handleChange }) => (
     <SearchBoxStyle
-
         type='search'
-        name="search"
+        name='search'
+        defaultValue=""
         placeholder={placeholder}
         onChange={handleChange} />
 )

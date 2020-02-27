@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import ButtonStyle from '../styled-components/Button.style'
 
 const AddCaption = ({ handleSubmit, handleChange }) => {
     return (
@@ -6,8 +7,9 @@ const AddCaption = ({ handleSubmit, handleChange }) => {
             <form onSubmit={handleSubmit}>
 
                 <input type="text" name="caption" onChange={handleChange} placeholder='Add a new caption' />
-                
-                <button type="submit">Add Caption</button>
+
+            <ButtonStyle type="submit">Add Caption</ButtonStyle>
+                {/* <button type="submit">Add Caption</button> */}
             </form>
         </div>
     )
