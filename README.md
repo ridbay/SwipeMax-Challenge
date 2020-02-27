@@ -64,8 +64,6 @@ The scripts;
 
 - `npm server`: This  give us live reloading (hot reloading) (developement)
 
-
-
 - `npm build`: Changes the directory into client folder  runs build script
 
 
