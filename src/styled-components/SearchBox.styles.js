@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const SearchBoxStyle = styled.input`
-
     border: none;
     outline: none;
     padding: 10px;
@@ -11,5 +10,6 @@ const SearchBoxStyle = styled.input`
     margin-bottom: 30px;
 `
 
-
 export default SearchBoxStyle;
+
+

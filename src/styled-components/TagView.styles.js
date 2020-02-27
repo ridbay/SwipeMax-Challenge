@@ -6,7 +6,7 @@ display: flex;
     background-color: blue;
     color: white;
     text-transform:capitalize;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 1px solid grey;
     padding: 25px;
     cursor: pointer;
