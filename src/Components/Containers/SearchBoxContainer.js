@@ -5,6 +5,7 @@ const SearchBoxContainer = ({ placeholder, handleChange }) => (
     <SearchBoxStyle
 
         type='search'
+        name="search"
         placeholder={placeholder}
         onChange={handleChange} />
 )
