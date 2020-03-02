@@ -23,7 +23,8 @@ class Row3 extends Component {
                     <p>This is a sample project Test</p>
                 </div>
                 <div className="item">
-                    <h1>{this.state.count}</h1>
+                <h1>{this.state.count < 0 ? 0: this.state.count}</h1>
+                    
                     <button onClick={this.increment}>Add</button>
           <button onClick={this.decrement}>Minus</button>
                 </div>

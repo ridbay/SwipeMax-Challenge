@@ -1,17 +1,9 @@
 
 # Caption-Cards-Challenge
 
-## What are the features of this App?
-
-This project contains basic feature of:
-1. List of Tags and Captions  
-2. Filtering by Tags 
-3. Adding Tags & Captions 
-
-
 ## Live Application URL
 
-### [(Live Demo)](https://sleepy-booth-9e836c.netlify.com/)
+### [(Live Demo)](https://objective-clarke-931331.netlify.com/)
 This URL has the application deployed in.
 
 
@@ -20,11 +12,11 @@ This URL has the application deployed in.
 ## Prerequisites
 
 ### Clone this Repo
-https://github.com/ridbay/Caption-Cards-Challenge.git
+https://github.com/ridbay/SwipeMax-Challenge.git
 
 Clone down this repository. You will need `react`, `node` and `npm` installed globally on your machine.  
 ```bash
-git clone https://github.com/ridbay/Caption-Cards-Challenge.git
+git clone https://github.com/ridbay/SwipeMax-Challenge.git
 ```
 
 
@@ -71,10 +63,6 @@ The Application Runs on **localhost:3000**
 
 ## Live Application URL
 
-[(Live Demo)](https://sleepy-booth-9e836c.netlify.com/)
+[(Live Demo)](https://objective-clarke-931331.netlify.com/)
 
 Click on the link to see the application
-
-## Contributing
-
-Feel free to open issues and pull requests.!
