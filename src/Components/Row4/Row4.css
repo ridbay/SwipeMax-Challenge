@@ -1,0 +1,22 @@
+
+
+.wrapper4 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;;
+  }
+  
+  .item4 {
+    border: 1px solid #fff;
+    background-color: #464646;
+    height: 200px;
+    flex: 1;
+    
+  }
+  .item41 {
+    border: 1px solid #fff;
+    background-color: #464646;
+    height: 200px;
+    flex: 2;
+    
+  }

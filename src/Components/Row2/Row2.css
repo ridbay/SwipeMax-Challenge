@@ -1,0 +1,51 @@
+
+
+.wrapper2 {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  background-color: white;
+  /* flex-wrap: nowrap; */
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+.column2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.one2 {
+  background-color: #C4C4C4;
+}
+.two2 {
+  background-color: #9E00FF;
+  height: 100px;
+}
+.three2 {
+  background-color: #C4C4C4;
+  height: 100px;
+}
+.four2 {
+  background-color: #00FF66;
+  height: 100px;
+}
+.five2 {
+  background-color: #C4C4C4;
+  height: 100px;
+}
+.six2 {
+  background-color: #BD00FF;
+  height: 100px;
+}
+
+.size2 {
+  width: 212.74px;
+height: 248.67px;
+}
